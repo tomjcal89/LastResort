@@ -27,8 +27,9 @@ function randomizer(lat, long) {
             var featured = $("<img>");
             featured.addClass("image");
             featured.attr("src", "./assets/images/sad.png");
-            featured.attr("width", "300px")
+            featured.attr("width", "300px");
             $("#map-canvas").html(featured);
+            $("#nothing").html("No locations nearby, please search a different area");
         };
 
         var i = resp_rest[Math.floor(Math.random() * resp_rest.length)];

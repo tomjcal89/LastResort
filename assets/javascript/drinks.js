@@ -28,7 +28,7 @@ function randomizer(lat, long) {
             featured.attr("src", "./assets/images/sad.png");
             featured.attr("width", "300px")
             $("#map-canvas").html(featured);
-            $("#nothing").html("No locations nearby, please try again")
+            $("#nothing").html("No locations nearby, please search a different area")
         };
 
 
