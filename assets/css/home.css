@@ -1,0 +1,169 @@
+.cont{
+    
+    width: 100%; 
+    height: 10%; 
+    margin: auto;  
+    background: url("../images/wood.jpg")
+}
+
+.title {
+width: 100%;
+margin: auto; 
+text-align: center; 
+font-family: 'Fugaz One'; 
+font-size: 50px;
+color: rgb(250, 250, 250);
+font-weight: bold;
+background-color: rgba(43, 43, 43, 0.5);
+}
+
+:root {
+--container-bg-color: #333;
+--left-bg-color: rgba(43, 43, 43, 0.7);
+--left-button-hover-color: rgba(52, 110, 141, 0.8);
+--right-bg-color: rgba(43, 43, 43, 0.7);
+--right-button-hover-color: rgba(52, 110, 141, 0.8);
+--hover-width: 75%;
+--other-width: 25%;
+--speed: 1100ms ;
+}
+
+html, body {
+padding: 0;
+margin: 0;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+}
+
+h1{
+font-family: 'Asset', cursive;
+font-size: 110px;
+color: rgb(255, 255, 255);
+position: absolute;
+left: 50%;
+top: 1  0%;
+transform: translateX(-50%);
+white-space: nowrap; 
+}
+
+.button{
+display: block;
+position: absolute;
+left: 50%;
+top: 40%;
+height: 2.5rem;
+padding-top: 1.3rem;
+width: 15rem;
+text-align: center;
+color: white;
+border: rgb(52, 110, 141) solid 0.2rem;
+font-size: 25px;
+font-weight: bold;
+text-transform: uppercase;
+text-decoration: underline;
+transform: translateX(-50%);
+}
+
+.split.left .button:hover {
+background: var(--left-button-hover-color);
+border-color: white; 
+}
+
+.split.right .button:hover {
+background: var(--right-button-hover-color);
+border-color: white; 
+}
+
+.container{
+position: relative;
+width: 100%;
+height: 90%;
+background: var(--container-bg-color);
+}
+
+.split{
+position: absolute;
+width: 50%;
+height: 100%;
+overflow: hidden;
+}
+
+.split.left{
+left:0;
+background: url("../images/food.jpg") center center no-repeat;
+background-size: cover;  
+}
+
+.split.left:before{
+position: absolute;
+content:"";
+width: 100%;
+height: 100%;
+background: var(--left-bg-color)
+}
+
+
+.split.right{
+right:0;
+background: url("../images/drink.jpg") center center no-repeat;
+background-size: cover;
+}
+
+.split.right:before{
+position: absolute;
+content:"";
+width: 100%;
+height: 100%;
+background: var(--right-bg-color)
+}
+
+.split.left, .split.right, .split.right:before, .split.left:before{
+transition: var(--speed) all ease-in-out;
+
+}
+
+.hover-left .left {
+width: var(--hover-width);
+--left-bg-color: rgba(43, 43, 43, 0.5);  
+}
+
+.hover-left .right {
+width: var(--other-width)  
+}
+
+.hover-left .right:before{
+z-index: 2;
+
+}
+
+.hover-right .right {
+width: var(--hover-width);
+--right-bg-color: rgba(43, 43, 43, 0.5);
+}
+
+.hover-right .left {
+width: var(--other-width)  
+}
+
+.hover-right .left:before{
+z-index: 2;
+}
+
+@media(max-width: 800px){
+h1{
+    font-size: 3rem;
+}
+
+.button{
+    width: 12rem;
+    font-size: 20px;;
+}
+}
+
+@media(max-height: 700px){
+.button{
+    top:70%;
+}
+}
