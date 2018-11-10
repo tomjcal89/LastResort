@@ -1,104 +1,105 @@
 .cont{
-    width: 100%; 
-    height: 70px; 
-    margin: auto;  
-    background: url("../images/wood.jpg")
-  }
-  
-  #homebut{
-   position: absolute;
-   height: 50px;
-   width: 100px;
-   margin-left: 20px;
-   margin-top: 1%;
-   font-size: 30px;
-  }
-  
-  .container2{
-    margin-top: -75px;
-    color: white;
-    font-size: 50px;
-    float: left;
-  }
-  
-  .card-header {
-  border: none;
-  }
-  
-  .card{
-    width: 500px;
-    margin-right: 50px;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-  }
-  
-  .title {
-  width: 100%;
-  margin: auto; 
-  text-align: center; 
-  font-family: 'Fugaz One'; 
+  width: 100%; 
+  height: 70px; 
+  margin: auto;  
+  background: url("../images/wood.jpg")
+}
+
+#homebut{
+ position: absolute;
+ height: 50px;
+ width: 100px;
+ margin-left: 20px;
+ margin-top: 1%;
+ font-size: 30px;
+}
+
+.container2{
+  margin-top: -30px;
+  color: white;
   font-size: 50px;
-  color: rgb(250, 250, 250);
-  font-weight: bold;
-  background-color: rgba(43, 43, 43, 0.5);
+  float: left;
+
+}
+
+.card-header {
+border: none;
+}
+
+.card{
+  width: 500px;
+  margin-right: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.title {
+width: 100%;
+margin: auto; 
+text-align: center; 
+font-family: 'Fugaz One'; 
+font-size: 50px;
+color: rgb(250, 250, 250);
+font-weight: bold;
+background-color: rgba(43, 43, 43, 0.5);
+position: absolute;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.jumbotron{
+  text-align: center;
+  width: 960px;
+  background-color: rgba(94, 94, 94, 0.5);
+  margin: auto;
+  overflow: auto;
   position: absolute;
-  }
-  
-  html, body {
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  
-  .jumbotron{
-    text-align: center;
-    width: 960px;
-    background-color: rgba(94, 94, 94, 0.5);
-    margin: auto;
-    overflow: auto;
-    position: absolute;
-    top: 375px;;
-    left:50%;
-    transform: translate(-50%,-50%);
-    border-radius: 9px;
-    margin-bottom: 70px;
-  }
-  
-  .locationBnt{
-    margin-top: 50px;
-    text-align: center;
-    height: 50px;
-  }
-  
-  body {
-    background-image: url(../images/Food3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: black;
-    font-family: 'Pattaya', sans-serif;
-  }
-  
-  #searchTextField, #current {
-    font-size: 30px;
-    margin-top: 150px;
-  }
-  
-  #map-canvas {
-    float:right;
-    height: 300px;
-    width: 300px;
-    margin-left: 20px;
-    border-radius: 20px;
-  }
-  
-  #home{
-    height: 5%;
-    text-decoration: none;
-    color: black
-  }
-  
-  
-  
+  top: 375px;;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 9px;
+  margin-bottom: 70px;
+}
+
+.locationBnt{
+  margin-top: 50px;
+  text-align: center;
+  height: 50px;
+  width:57%;
+}
+
+body {
+  background-image: url(../images/Food3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-family: 'Pattaya', sans-serif;
+}
+
+#searchTextField, #current {
+  font-size: 30px;
+  margin-top: 110px;
+}
+
+#map-canvas {
+  float:right;
+  height: 300px;
+  width: 300px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+#home{
+  height: 5%;
+  text-decoration: none;
+  color: black
+}
+
+

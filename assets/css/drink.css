@@ -15,7 +15,7 @@
 }
 
 .container2{
-    margin-top: -75px;
+    margin-top: -30px;
     color: white;
     font-size: 50px;
     float: left;
@@ -23,6 +23,7 @@
 
 .card-header {
     border: none;
+    
 }
 
 .card{
@@ -72,6 +73,7 @@ html, body {
     margin-top: 50px;
     text-align: center;
     height: 50px;
+    width: 57%;
 }
 
 body {
@@ -84,7 +86,7 @@ body {
 
 #searchTextField, #current {
     font-size: 30px;
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
 #map-canvas {
@@ -100,3 +102,5 @@ body {
     text-decoration: none;
     color: black
   }
+
+
